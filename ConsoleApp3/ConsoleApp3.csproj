@@ -179,5 +179,8 @@
     <None Include="packages.config" />
     <None Include="sols\Class1.sol" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="notes.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
