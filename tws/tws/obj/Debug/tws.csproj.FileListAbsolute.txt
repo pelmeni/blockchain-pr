@@ -1,0 +1,10 @@
+E:\dev\tws\tws\bin\Debug\tws.exe.config
+E:\dev\tws\tws\bin\Debug\tws.exe
+E:\dev\tws\tws\bin\Debug\tws.pdb
+E:\dev\tws\tws\bin\Debug\Newtonsoft.Json.dll
+E:\dev\tws\tws\bin\Debug\TinyWebServer.dll
+E:\dev\tws\tws\bin\Debug\Newtonsoft.Json.xml
+E:\dev\tws\tws\obj\Debug\tws.csproj.CoreCompileInputs.cache
+E:\dev\tws\tws\obj\Debug\tws.csproj.CopyComplete
+E:\dev\tws\tws\obj\Debug\tws.exe
+E:\dev\tws\tws\obj\Debug\tws.pdb
