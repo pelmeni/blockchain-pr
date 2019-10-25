@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\gren-a-sipichugin\\source\\repos\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gren-a-sipichugin\\source\\repos\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gren-a-sipichugin\\source\\repos\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+        "projectName": "ConsoleApp4",
+        "projectPath": "C:\\Users\\gren-a-sipichugin\\source\\repos\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gren-a-sipichugin\\source\\repos\\ConsoleApp4\\ConsoleApp4\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "BouncyCastle": {
+              "target": "Package",
+              "version": "[1.8.5, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Nethereum": {
+              "target": "Package",
+              "version": "[0.10.0-date20191002-0144.git-0942abf, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
