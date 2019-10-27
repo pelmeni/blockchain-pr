@@ -9,21 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContractDeployConsole", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{2725723F-A605-41CB-A84E-0A61284B3F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyCompanyWebApplication", "EnergyCompanyWebApplication\EnergyCompanyWebApplication.csproj", "{CFA0A4C7-29FD-467F-B781-463311835CFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyCompanyWebApplication", "EnergyCompanyWebApplication\EnergyCompanyWebApplication.csproj", "{CFA0A4C7-29FD-467F-B781-463311835CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystemWebApplication", "WebApplication2\BankSystemWebApplication.csproj", "{DAC2F5B9-C11C-4750-A812-22291C702C93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystemWebApplication", "WebApplication2\BankSystemWebApplication.csproj", "{DAC2F5B9-C11C-4750-A812-22291C702C93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem.Core", "BankSystem.Core\BankSystem.Core.csproj", "{195DBED0-92A9-4FD7-BFC6-80C9976ED681}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystem.Core", "BankSystem.Core\BankSystem.Core.csproj", "{195DBED0-92A9-4FD7-BFC6-80C9976ED681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem.Business", "BankSystem.Business\BankSystem.Business.csproj", "{BF923550-A445-4118-99CC-EF1EEA5F6AB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystem.Business", "BankSystem.Business\BankSystem.Business.csproj", "{BF923550-A445-4118-99CC-EF1EEA5F6AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystem.Data", "BankSystem.Data\BankSystem.Data.csproj", "{FD6622E2-B992-43EC-A5FC-BB41A7825A58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystem.Data", "BankSystem.Data\BankSystem.Data.csproj", "{FD6622E2-B992-43EC-A5FC-BB41A7825A58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F72F84C1-A4F3-47BF-BAAC-D07E37774115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{F72F84C1-A4F3-47BF-BAAC-D07E37774115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankSystemWebApi", "BankSystemWebApi\BankSystemWebApi.csproj", "{F19D216C-8DDD-47D5-BA98-44F9558565D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystemWebApi", "BankSystemWebApi\BankSystemWebApi.csproj", "{F19D216C-8DDD-47D5-BA98-44F9558565D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{15401313-9547-4DE0-BE2F-1EF3CCDBF3CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{15401313-9547-4DE0-BE2F-1EF3CCDBF3CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication5", "WebApplication5\WebApplication5.csproj", "{A9DB5ADD-57C2-4F55-B2EB-A8CC6B587355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{15401313-9547-4DE0-BE2F-1EF3CCDBF3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15401313-9547-4DE0-BE2F-1EF3CCDBF3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15401313-9547-4DE0-BE2F-1EF3CCDBF3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DB5ADD-57C2-4F55-B2EB-A8CC6B587355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DB5ADD-57C2-4F55-B2EB-A8CC6B587355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DB5ADD-57C2-4F55-B2EB-A8CC6B587355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DB5ADD-57C2-4F55-B2EB-A8CC6B587355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

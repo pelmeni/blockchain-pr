@@ -28,6 +28,7 @@ namespace BankSystemWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -63,7 +64,7 @@ namespace BankSystemWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseDefaultFiles();
             app.UseStaticFiles();

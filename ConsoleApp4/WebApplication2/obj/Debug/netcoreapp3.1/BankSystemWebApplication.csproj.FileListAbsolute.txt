@@ -136,5 +136,10 @@ C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microso
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\BankSystem.Core.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\bin\Debug\netcoreapp3.1\BankSystem.Core.pdb
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\obj\Debug\netcoreapp3.1\BankSystemWebApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication2\obj\Debug\netcoreapp3.1\BankSystemWebApplication.MvcApplicationPartsAssemblyInfo.cache

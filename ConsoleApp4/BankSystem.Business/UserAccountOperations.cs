@@ -46,5 +46,15 @@ namespace BankSystem.Business
             return created;
 
         }
+
+        public UserAccount GetOne(int userAccountId)
+        {
+            var result = ExecuteQuery(db =>
+                    db.Query<UserAccount>("select * from dbo.[UserAccount] (nolock) where UserAccountId=@userAccountId",
+                        new { userAccountId }))?.FirstOrDefault();
+
+            return result;
+
+        }
     }
 }

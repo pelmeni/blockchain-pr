@@ -1,0 +1,90 @@
+﻿@model IEnumerable<WebApplication5.Models.BankInvoice>
+@using (Html.BeginForm("ProcessInvoice", "BankController",FormMethod.Post, new { id = "myForm", method="post", action="/Bank/ProcessInvoice" }))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuerAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentAccountId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusChanged)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InvoiceId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssuerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssuerAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssueDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaymentAccountId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Created)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusChanged)
+                </td>
+                <td>
+                    @Html.Hidden("invoiceId", item.InvoiceId)
+                    @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    
+                    @if(item.StatusId==0)
+                    @Html.ActionLink("Process", "ProcessInvoice", new { invoiceId = item.InvoiceId }, new { @class = "postLink", onclick = "return false;" })
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
