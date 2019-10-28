@@ -22,6 +22,8 @@
     <ProjectReference Include="..\BankSystem.Core\BankSystem.Core.csproj" />
     <ProjectReference Include="..\BankSystem.Data\BankSystem.Data.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Energy.Business\Energy.Business.csproj" />
+    <ProjectReference Include="..\EnergyConsumption.Data\EnergyConsumption.Data.csproj" />
   </ItemGroup>
 
 </Project>

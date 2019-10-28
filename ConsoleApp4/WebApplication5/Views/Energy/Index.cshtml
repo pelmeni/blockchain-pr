@@ -1,0 +1,6 @@
+﻿@model EnergyServiceProfileDetails
+<div>
+<h3>My Sensor Devices</h3>
+
+@Html.PartialAsync("EnergyUserSensorsPartial",Model.sensors).Result
+</div>

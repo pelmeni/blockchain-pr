@@ -15,7 +15,8 @@
       "launchUrl": "index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "use64Bit": true
     },
     "BankSystemWebApi": {
       "commandName": "Project",
