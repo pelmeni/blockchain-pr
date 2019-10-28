@@ -1,1 +1,2 @@
 ﻿dates - https://medium.com/@k3no/making-a-birthday-contract-858fd3f63618
+multisig - https://github.com/ethereum/dapp-bin/blob/master/wallet/wallet.sol, https://habr.com/ru/company/mixbytes/blog/412675/
