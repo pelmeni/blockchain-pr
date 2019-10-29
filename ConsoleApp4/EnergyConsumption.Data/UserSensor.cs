@@ -10,5 +10,7 @@ namespace EnergyConsumption.Data
         public Guid UserId { get; set; }
         public Guid SensorId { get; set; }
         public DateTime Created { get; set; }
+        
+        public string SensorText { get; set; }
     }
 }

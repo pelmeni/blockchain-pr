@@ -253,14 +253,14 @@
         }
       }
     },
-    "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\Energy.Business.csproj": {
+    "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\Energy.Business.csproj",
-        "projectName": "Energy.Business",
-        "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\Energy.Business.csproj",
+        "projectUniqueName": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj",
+        "projectName": "EnergyConsumption.Business",
+        "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj",
         "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\obj\\",
+        "outputPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -296,6 +296,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -408,8 +414,8 @@
               "C:\\dev\\blockchain-pr\\ConsoleApp4\\Common\\Common.csproj": {
                 "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Common\\Common.csproj"
               },
-              "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\Energy.Business.csproj": {
-                "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Energy.Business\\Energy.Business.csproj"
+              "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj": {
+                "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj"
               },
               "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Data\\EnergyConsumption.Data.csproj": {
                 "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Data\\EnergyConsumption.Data.csproj"

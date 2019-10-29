@@ -141,8 +141,6 @@ C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\V
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Bank\Index.cshtml.g.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Bank\InvoiceList.cshtml.g.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Bank\TransactionList.cshtml.g.cs
-C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\EnergyUserSensorsPartial.cshtml.g.cs
-C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\Index.cshtml.g.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -157,5 +155,10 @@ C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\WebAppl
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\WebApplication5.csproj.CopyComplete
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\WebApplication5.dll
 C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\WebApplication5.pdb
-C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\bin\Debug\netcoreapp3.1\Energy.Business.dll
-C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\bin\Debug\netcoreapp3.1\Energy.Business.pdb
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\bin\Debug\netcoreapp3.1\EnergyConsumption.Business.dll
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\bin\Debug\netcoreapp3.1\EnergyConsumption.Business.pdb
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\Index.cshtml.g.cs
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\MySensors.cshtml.g.cs
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\Create.cshtml.g.cs
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\UserSensorDetails.cshtml.g.cs
+C:\dev\blockchain-pr\ConsoleApp4\WebApplication5\obj\Debug\netcoreapp3.1\Razor\Views\Energy\SensorData.cshtml.g.cs

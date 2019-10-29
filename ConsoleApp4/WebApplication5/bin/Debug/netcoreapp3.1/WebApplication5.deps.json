@@ -28,6 +28,8 @@
           "BankSystem.Core": "1.0.0",
           "BankSystem.Data": "1.0.0",
           "Common": "1.0.0",
+          "EnergyConsumption.Business": "1.0.0",
+          "EnergyConsumption.Data": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.0-preview1.19508.20",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.0-preview1.19508.20",
           "Microsoft.AspNetCore.Identity.UI": "3.1.0-preview1.19508.20",
@@ -2184,6 +2186,27 @@
         },
         "compile": {
           "Common.dll": {}
+        }
+      },
+      "EnergyConsumption.Business/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0",
+          "Dapper": "2.0.30",
+          "EnergyConsumption.Data": "1.0.0"
+        },
+        "runtime": {
+          "EnergyConsumption.Business.dll": {}
+        },
+        "compile": {
+          "EnergyConsumption.Business.dll": {}
+        }
+      },
+      "EnergyConsumption.Data/1.0.0": {
+        "runtime": {
+          "EnergyConsumption.Data.dll": {}
+        },
+        "compile": {
+          "EnergyConsumption.Data.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5057,6 +5080,16 @@
       "sha512": ""
     },
     "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EnergyConsumption.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EnergyConsumption.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

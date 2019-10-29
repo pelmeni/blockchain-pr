@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Docs\plan.txt = Docs\plan.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Energy.Business", "Energy.Business\Energy.Business.csproj", "{84857BA6-3BDE-4826-A1FA-9139A9A7879A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyConsumption.Business", "EnergyConsumption.Business\EnergyConsumption.Business.csproj", "{99106597-4E83-4908-8979-7CFF9B6AB334}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,10 +94,10 @@ Global
 		{17B1D17A-47D4-49E9-9465-FDB89F76A856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17B1D17A-47D4-49E9-9465-FDB89F76A856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17B1D17A-47D4-49E9-9465-FDB89F76A856}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84857BA6-3BDE-4826-A1FA-9139A9A7879A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84857BA6-3BDE-4826-A1FA-9139A9A7879A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84857BA6-3BDE-4826-A1FA-9139A9A7879A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84857BA6-3BDE-4826-A1FA-9139A9A7879A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99106597-4E83-4908-8979-7CFF9B6AB334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99106597-4E83-4908-8979-7CFF9B6AB334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99106597-4E83-4908-8979-7CFF9B6AB334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99106597-4E83-4908-8979-7CFF9B6AB334}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,6 +9,9 @@ namespace WebApplication5.Models
         public int UserSensorId { get; set; }
         public Guid UserId { get; set; }
         public Guid SensorId { get; set; }
+        public string SensorText { get; set; }
         public DateTime Created { get; set; }
+        public int LastCounterValue { get; set; }
+        public DateTime LastCounterValueDateTime { get; set; }
     }
 }

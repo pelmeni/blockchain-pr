@@ -1,6 +1,15 @@
-﻿@model EnergyServiceProfileDetails
-<div>
-<h3>My Sensor Devices</h3>
+﻿@model WebApplication5.Models.EnergyServiceProfileDetails
 
-@Html.PartialAsync("EnergyUserSensorsPartial",Model.sensors).Result
+<div>
+    <h4>EnergyServiceProfileDetails</h4>
 </div>
+<div>
+    <h3>My Sensor Devices</h3>
+</div>
+@Html.PartialAsync("MySensors", Model.sensors).Result
+<hr />
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+<hr />

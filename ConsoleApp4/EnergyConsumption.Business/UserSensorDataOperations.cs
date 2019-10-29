@@ -7,9 +7,9 @@ using System.Linq;
 
 namespace EnergyConsumption.Business
 {
-    public class UserSensorDataOperations : BaseDapperConnection
+    public class SensorDataOperations : BaseDapperConnection
     {
-        public UserSensorDataOperations(IDapperConnectionStringProvider provider) : base(provider)
+        public SensorDataOperations(IDapperConnectionStringProvider provider) : base(provider)
         {
         }
         public IEnumerable<SensorData> GetList(Guid sensorId)

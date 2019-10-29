@@ -2724,6 +2724,31 @@
         "runtime": {
           "bin/placeholder/Common.dll": {}
         }
+      },
+      "EnergyConsumption.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Dapper": "2.0.30",
+          "EnergyConsumption.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EnergyConsumption.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnergyConsumption.Business.dll": {}
+        }
+      },
+      "EnergyConsumption.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EnergyConsumption.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnergyConsumption.Data.dll": {}
+        }
       }
     }
   },
@@ -8749,6 +8774,16 @@
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
+    },
+    "EnergyConsumption.Business/1.0.0": {
+      "type": "project",
+      "path": "../EnergyConsumption.Business/EnergyConsumption.Business.csproj",
+      "msbuildProject": "../EnergyConsumption.Business/EnergyConsumption.Business.csproj"
+    },
+    "EnergyConsumption.Data/1.0.0": {
+      "type": "project",
+      "path": "../EnergyConsumption.Data/EnergyConsumption.Data.csproj",
+      "msbuildProject": "../EnergyConsumption.Data/EnergyConsumption.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8757,6 +8792,8 @@
       "BankSystem.Core >= 1.0.0",
       "BankSystem.Data >= 1.0.0",
       "Common >= 1.0.0",
+      "EnergyConsumption.Business >= 1.0.0",
+      "EnergyConsumption.Data >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.0-preview1.19508.20",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.0-preview1.19508.20",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.0-preview1.19508.20",
@@ -8807,6 +8844,12 @@
             },
             "C:\\dev\\blockchain-pr\\ConsoleApp4\\Common\\Common.csproj": {
               "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\Common\\Common.csproj"
+            },
+            "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj": {
+              "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj"
+            },
+            "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Data\\EnergyConsumption.Data.csproj": {
+              "projectPath": "C:\\dev\\blockchain-pr\\ConsoleApp4\\EnergyConsumption.Data\\EnergyConsumption.Data.csproj"
             }
           }
         }

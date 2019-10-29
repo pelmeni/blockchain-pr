@@ -2,112 +2,143 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Energy.Business;
+using EnergyConsumption.Business;
+using EnergyConsumption.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication5.Models;
+using WebApplication5.Providers;
 
 namespace WebApplication5.Controllers
 {
     public class EnergyController : Controller
     {
-        // GET: Energy
-        public ActionResult Index()
+        public IActionResult Index()
         {
             var usops = new UserSensorOperations(new Providers.DapperEnergyServicesConnectionStringProvider());
+            var sdops = new SensorDataOperations(new Providers.DapperEnergyServicesConnectionStringProvider());
 
-            //var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
+            var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
 
-            //var userSensors = usops.GetList(userId)
-            //    .Select(i => new EnergyUserSensor()
-            //    {
-            //        UserSensorId = i.UserSensorId,
-            //        UserId = i.UserId,
-            //        SensorId = i.SensorId,
-            //        Created = i.Created
-            //    });
+            var dict = new Dictionary<Guid, SensorData>();
+            
+            var userSensors = usops.GetList(userId);
+            
+            foreach(var sid in userSensors.Select(i=>i.SensorId))
+            {
+                var data = sdops.GetList(sid).OrderByDescending(i => i.Created).Take(1).FirstOrDefault();
+
+                if(data!=null)
+                    dict.Add(sid, data);
+            }
+
+
+            var userEnSensors = userSensors
+                .Select(i => new EnergyUserSensor()
+                {
+                    UserSensorId = i.UserSensorId,
+                    UserId = i.UserId,
+                    SensorId = i.SensorId,
+                    Created = i.Created,
+                    SensorText = i.SensorText,
+                    LastCounterValue = dict.ContainsKey(i.SensorId) ? dict[i.SensorId].Value : 0,
+                    LastCounterValueDateTime = dict.ContainsKey(i.SensorId) ? dict[i.SensorId].Created : DateTime.Now
+                }); ;
 
             var model = new EnergyServiceProfileDetails()
             {
-                sensors = null
+                sensors = userEnSensors
             };
 
             return View(model);
         }
 
-        // GET: Energy/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Energy/Create
+        // GET: Blockchain/Create
         public ActionResult Create()
         {
-            return View();
+            var usops = new UserSensorOperations(new DapperEnergyServicesConnectionStringProvider());
+
+            var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
+
+            var model = new EnergyUserSensor()
+            {
+                UserSensorId = 0,
+                SensorId = Guid.NewGuid(),
+                SensorText="My new smart sensor device(rename me)",
+                UserId = userId,
+                Created = DateTime.Now
+            };
+
+            return View(model);
         }
 
-        // POST: Energy/Create
+        // POST: Blockchain/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
             try
             {
-                // TODO: Add insert logic here
+                var usops = new UserSensorOperations(new DapperEnergyServicesConnectionStringProvider());
+
+                var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
+
+                var sensorText = collection["sensorText"];
+
+                var userSensor = usops.AddOne(userId, sensorText);
+
+                 // TODO: Add insert logic here
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
                 return View();
             }
         }
-
-        // GET: Energy/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Energy/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Energy/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: Energy/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
             try
             {
-                // TODO: Add delete logic here
+                var usops = new UserSensorOperations(new DapperEnergyServicesConnectionStringProvider());
+
+                //var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
+
+                usops.Delete(id);
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
                 return View();
             }
+        }
+
+        // GET: Blockchain/Create
+        public ActionResult Details(Guid sensorId)
+        {
+            var usops = new UserSensorOperations(new DapperEnergyServicesConnectionStringProvider());
+            var sdops = new SensorDataOperations(new Providers.DapperEnergyServicesConnectionStringProvider());
+
+            var userId = Guid.Parse(HttpContext.User.Claims.FirstOrDefault(i => i.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier").Value);
+
+            var sensor = usops.GetOne(sensorId, userId);
+            
+            var data = sdops.GetList(sensorId).OrderByDescending(i=>i.Created).ToArray();
+
+            var model = new EnergyUserSensorWithData()
+            {
+                UserSensorId = sensor.UserSensorId,
+                SensorId = sensor.SensorId,
+                SensorText = sensor.SensorText,
+                UserId = sensor.UserId,
+                Created = sensor.Created,
+                SensorData=data
+            };
+
+            return View("UserSensorDetails",model);
         }
     }
 }
