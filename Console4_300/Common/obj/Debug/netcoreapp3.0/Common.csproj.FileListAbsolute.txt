@@ -1,0 +1,8 @@
+C:\dev\blockchain-pr\Console4_300\Common\bin\Debug\netcoreapp3.0\Common.deps.json
+C:\dev\blockchain-pr\Console4_300\Common\bin\Debug\netcoreapp3.0\Common.dll
+C:\dev\blockchain-pr\Console4_300\Common\bin\Debug\netcoreapp3.0\Common.pdb
+C:\dev\blockchain-pr\Console4_300\Common\obj\Debug\netcoreapp3.0\Common.csprojAssemblyReference.cache
+C:\dev\blockchain-pr\Console4_300\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfoInputs.cache
+C:\dev\blockchain-pr\Console4_300\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfo.cs
+C:\dev\blockchain-pr\Console4_300\Common\obj\Debug\netcoreapp3.0\Common.dll
+C:\dev\blockchain-pr\Console4_300\Common\obj\Debug\netcoreapp3.0\Common.pdb

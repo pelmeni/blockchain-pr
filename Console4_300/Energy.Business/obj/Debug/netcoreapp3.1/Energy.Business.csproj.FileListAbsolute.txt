@@ -1,0 +1,12 @@
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\Energy.Business.deps.json
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\Energy.Business.dll
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\Energy.Business.pdb
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\Common.dll
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\EnergyConsumption.Data.dll
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\Common.pdb
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\bin\Debug\netcoreapp3.1\EnergyConsumption.Data.pdb
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\obj\Debug\netcoreapp3.1\Energy.Business.AssemblyInfoInputs.cache
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\obj\Debug\netcoreapp3.1\Energy.Business.AssemblyInfo.cs
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\obj\Debug\netcoreapp3.1\Energy.Business.csproj.CopyComplete
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\obj\Debug\netcoreapp3.1\Energy.Business.dll
+C:\dev\blockchain-pr\ConsoleApp4\Energy.Business\obj\Debug\netcoreapp3.1\Energy.Business.pdb

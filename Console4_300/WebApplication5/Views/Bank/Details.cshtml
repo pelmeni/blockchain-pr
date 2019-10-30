@@ -1,0 +1,73 @@
+﻿@model WebApplication5.Models.UserBankAccountDetails
+
+<div>
+    <h3>General Bank Account Details</h3>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserAccountId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserAccountId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BlockchainAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BlockchainAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Created)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Created)
+        </dd>
+    </dl>
+</div>
+<hr />
+<div>
+    <h3>Autopays with Smart Contract</h3>
+    <div>
+        @Html.DisplayNameFor(model => model.IsAutoPayAllowed)
+        @Html.DisplayFor(model => model.IsAutoPayAllowed)
+        @*@Html.CheckBoxFor(model => model.IsAutoPayAllowed, new { @class = "autopaycheckbox", @id = "isAutoPayCheckBox_" + Model.UserAccountId, @data = Model.UserAccountId })*@
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.AutoPaySensorId)
+        @Html.DisplayFor(model => model.AutoPaySensorId)
+        @*@Html.TextBoxFor(model => model.AutoPaySensorId, new { @width="auto",@class = "autopaytextbox", @id = "autoPayAccountId_" + Model.UserAccountId, @data = Model.UserAccountId, @disabled = "disabled" })*@
+    </div>
+</div>
+<div>
+        @Html.ActionLink("Change Autopay Option", "ChangeAutoPay", new {  id = Model.UserAccountId  })
+    </div>
+    <hr />
+    <div>
+        <h3>Balance</h3>
+        Balance on @Model.Balance.Modified : @Model.Balance.Amount
+        <br />
+        <br />
+        @Html.ActionLink("Charge", "Charge", new { accountId = Model.AccountId }) |
+    </div>
+    <hr />
+    <div>
+        <h3>Invoices</h3>
+        @Html.PartialAsync("InvoiceList", Model.Invoices).Result
+    </div>
+    <hr />
+    <div>
+        <h3>Transactions</h3>
+        @Html.PartialAsync("TransactionList", Model.Transactions).Result
+    </div>

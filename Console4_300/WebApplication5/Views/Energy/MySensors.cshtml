@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplication5.Models.EnergyUserSensor>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserSensorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SensorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SensorText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Created)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastCounterValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastCounterValueDateTime)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserSensorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SensorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SensorText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Created)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastCounterValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastCounterValueDateTime)
+            </td>
+
+            <td>
+                @Html.ActionLink("Details", "Details", new {  sensorId=item.SensorId  }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.UserSensorId }) |
+                @using (Html.BeginForm("Delete", "EnergyController", FormMethod.Post, new { id = "SensorsForm", method = "post", action = $"/Energy/Delete/{item.UserSensorId}" }))
+                {
+                    @Html.ActionLink("Delete", "Delete", "EnergyController", new { id = item.UserSensorId }, new { @class = "postLink", onclick = "return false;" })
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

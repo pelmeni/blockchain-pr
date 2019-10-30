@@ -1,0 +1,13 @@
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\BankSystem.Business.deps.json
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\BankSystem.Business.dll
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\BankSystem.Business.pdb
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\BankSystem.Data.dll
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\Common.dll
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\BankSystem.Data.pdb
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\bin\Debug\netcoreapp3.0\Common.pdb
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.csprojAssemblyReference.cache
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.AssemblyInfoInputs.cache
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.AssemblyInfo.cs
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.csproj.CopyComplete
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.dll
+C:\dev\blockchain-pr\Console4_300\BankSystem.Business\obj\Debug\netcoreapp3.0\BankSystem.Business.pdb
