@@ -1,8 +1,0 @@
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\bin\Debug\netcoreapp3.1\EnergyConsumption.Data.deps.json
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\bin\Debug\netcoreapp3.1\EnergyConsumption.Data.dll
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\bin\Debug\netcoreapp3.1\EnergyConsumption.Data.pdb
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\obj\Debug\netcoreapp3.1\EnergyConsumption.Data.AssemblyInfoInputs.cache
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\obj\Debug\netcoreapp3.1\EnergyConsumption.Data.AssemblyInfo.cs
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\obj\Debug\netcoreapp3.1\EnergyConsumption.Data.dll
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\obj\Debug\netcoreapp3.1\EnergyConsumption.Data.pdb
-C:\dev\blockchain-pr\ConsoleApp4\EnergyConsumption.Data\obj\Debug\netcoreapp3.1\EnergyConsumption.Data.csprojAssemblyReference.cache

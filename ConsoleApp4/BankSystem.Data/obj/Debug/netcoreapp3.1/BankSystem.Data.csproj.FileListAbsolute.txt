@@ -1,7 +1,0 @@
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\bin\Debug\netcoreapp3.1\BankSystem.Data.deps.json
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\bin\Debug\netcoreapp3.1\BankSystem.Data.dll
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\bin\Debug\netcoreapp3.1\BankSystem.Data.pdb
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\obj\Debug\netcoreapp3.1\BankSystem.Data.AssemblyInfoInputs.cache
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\obj\Debug\netcoreapp3.1\BankSystem.Data.AssemblyInfo.cs
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\obj\Debug\netcoreapp3.1\BankSystem.Data.dll
-C:\dev\blockchain-pr\ConsoleApp4\BankSystem.Data\obj\Debug\netcoreapp3.1\BankSystem.Data.pdb
