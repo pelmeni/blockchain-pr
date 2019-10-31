@@ -1,40 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\blockchain-pr\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj": {}
+    "E:\\c_dev\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj": {}
   },
   "projects": {
-    "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj": {
+    "E:\\c_dev\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj",
+        "projectUniqueName": "E:\\c_dev\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj",
         "projectName": "BankSystem.Business",
-        "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\obj\\",
+        "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "E:\\c_dev\\Console4_300\\BankSystem.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj": {
-                "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj"
+              "E:\\c_dev\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj": {
+                "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj"
               },
-              "C:\\dev\\blockchain-pr\\Console4_300\\Common\\Common.csproj": {
-                "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\Common\\Common.csproj"
+              "E:\\c_dev\\Console4_300\\Common\\Common.csproj": {
+                "projectPath": "E:\\c_dev\\Console4_300\\Common\\Common.csproj"
               }
             }
           }
@@ -63,20 +62,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -86,28 +71,27 @@
         }
       }
     },
-    "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj": {
+    "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
+        "projectUniqueName": "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
         "projectName": "BankSystem.Core",
-        "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\obj\\",
+        "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "E:\\c_dev\\Console4_300\\BankSystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -138,20 +122,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -161,28 +131,27 @@
         }
       }
     },
-    "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj": {
+    "E:\\c_dev\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj",
+        "projectUniqueName": "E:\\c_dev\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj",
         "projectName": "BankSystem.Data",
-        "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Data\\obj\\",
+        "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Data\\BankSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "E:\\c_dev\\Console4_300\\BankSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -207,20 +176,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -230,37 +185,36 @@
         }
       }
     },
-    "C:\\dev\\blockchain-pr\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj": {
+    "E:\\c_dev\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj",
+        "projectUniqueName": "E:\\c_dev\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj",
         "projectName": "BankSystemWebApi",
-        "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystemWebApi\\obj\\",
+        "projectPath": "E:\\c_dev\\Console4_300\\BankSystemWebApi\\BankSystemWebApi.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "E:\\c_dev\\Console4_300\\BankSystemWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj": {
-                "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj"
+              "E:\\c_dev\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj": {
+                "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Business\\BankSystem.Business.csproj"
               },
-              "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj": {
-                "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj"
+              "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj": {
+                "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj"
               }
             }
           }
@@ -289,24 +243,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -319,28 +255,27 @@
         }
       }
     },
-    "C:\\dev\\blockchain-pr\\Console4_300\\Common\\Common.csproj": {
+    "E:\\c_dev\\Console4_300\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\Common\\Common.csproj",
+        "projectUniqueName": "E:\\c_dev\\Console4_300\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\Common\\obj\\",
+        "projectPath": "E:\\c_dev\\Console4_300\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+        "outputPath": "E:\\c_dev\\Console4_300\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -375,20 +310,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

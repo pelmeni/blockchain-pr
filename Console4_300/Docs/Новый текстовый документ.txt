@@ -1,0 +1,56 @@
+USE [energycompany]
+GO
+/****** Object:  StoredProcedure [dbo].[sp_generate_sensor_power_consumption_values]    Script Date: 10/31/2019 6:16:12 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER proc [dbo].[sp_generate_sensor_power_consumption_values] as
+begin
+--truncate table SensorData
+declare sens cursor for
+select distinct SensorID from UserSensor s(nolock) --where s.Enabled=1
+
+declare @sensorId uniqueidentifier
+
+open sens
+
+fetch next from sens into @sensorId
+
+
+
+while(@@FETCH_STATUS<>-1)
+begin
+
+if not exists(select SensorID from SensorData (nolock) where SensorID=@sensorId)
+begin
+
+insert SensorData (SensorID, Value) Values(@sensorId,0.0)
+
+end
+else
+begin
+
+insert SensorData (SensorID, Value)
+select top 1 SensorID, Value+datediff(MS, Created, getdate())*2.0*rand()/(60.0*60.0*1000.0) 
+	from SensorData sd (nolock) 
+		where SensorID = @sensorId
+			order by Created desc
+
+end
+
+
+fetch next from sens into @sensorId
+end
+
+close sens
+deallocate sens
+
+
+
+select SensorID, Value , Created
+from SensorData
+order by SensorID, Created desc
+
+
+end

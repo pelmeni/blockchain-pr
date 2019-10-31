@@ -3370,31 +3370,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dev\\.nuget\\packages\\": {},
+    "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
+      "projectUniqueName": "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
       "projectName": "BankSystem.Core",
-      "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
-      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\BankSystem.Core\\obj\\",
+      "projectPath": "E:\\c_dev\\Console4_300\\BankSystem.Core\\BankSystem.Core.csproj",
+      "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+      "outputPath": "E:\\c_dev\\Console4_300\\BankSystem.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
@@ -3425,20 +3424,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

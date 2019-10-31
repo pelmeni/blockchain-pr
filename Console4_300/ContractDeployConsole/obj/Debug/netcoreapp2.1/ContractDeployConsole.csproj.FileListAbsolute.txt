@@ -11,3 +11,16 @@ C:\dev\blockchain-pr\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\
 C:\dev\blockchain-pr\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.csproj.CopyComplete
 C:\dev\blockchain-pr\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.dll
 C:\dev\blockchain-pr\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.pdb
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\ContractDeployConsole.deps.json
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\ContractDeployConsole.runtimeconfig.json
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\ContractDeployConsole.runtimeconfig.dev.json
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\ContractDeployConsole.dll
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\ContractDeployConsole.pdb
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\Contracts.dll
+E:\c_dev\Console4_300\ContractDeployConsole\bin\Debug\netcoreapp2.1\Contracts.pdb
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.csprojAssemblyReference.cache
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.AssemblyInfoInputs.cache
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.AssemblyInfo.cs
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.csproj.CopyComplete
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.dll
+E:\c_dev\Console4_300\ContractDeployConsole\obj\Debug\netcoreapp2.1\ContractDeployConsole.pdb

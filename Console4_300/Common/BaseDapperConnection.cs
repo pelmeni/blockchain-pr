@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +17,13 @@ namespace Common
         }
         public string ConnectionString { get; private set; }
 
-
+        protected long GetTableChecksum(string table)
+        {
+            return ExecuteQuery(db => {
+                var r = db.Query<long?>($"select CHECKSUM_AGG(CHECKSUM(*)) chksum from {table} (nolock)");
+                return r;
+                })?.FirstOrDefault() ?? 0;
+        }
         public void Execute(Action<IDbConnection> action)
         {
             using (IDbConnection db = new SqlConnection(ConnectionString))
