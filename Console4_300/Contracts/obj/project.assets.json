@@ -688,31 +688,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dev\\.nuget\\packages\\": {},
+    "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\dev\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj",
-      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\blockchain-pr\\Console4_300\\Contracts\\obj\\",
+      "projectPath": "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj",
+      "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+      "outputPath": "E:\\c_dev\\Console4_300\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

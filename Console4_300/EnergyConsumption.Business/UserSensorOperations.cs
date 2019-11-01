@@ -46,6 +46,14 @@ namespace EnergyConsumption.Business
                             new { userId }))?.ToArray();
         }
 
+        public IEnumerable<UserSensor> GetList()
+        {
+            return ExecuteQuery(db =>db.Query<UserSensor>("select * from dbo.[UserSensor] (nolock)"))?.ToArray();
+        }
+        public SensorData GetLastCounters(Guid sensorId)
+        {
+            return ExecuteQuery(db => db.Query<SensorData>("select SensorId, SensorDataId, lastCountersValue Value, lastCountersDateTime Created from dbo.[vw_UserSensors] (nolock) where SensorId=@sensorId", new { sensorId }))?.FirstOrDefault();
+        }
         public void UpdateUserSensorText(Guid userId, string sensorText)
         {
             Execute(
@@ -68,5 +76,34 @@ namespace EnergyConsumption.Business
                                db.Query<UserSensor>("select * from dbo.[UserSensor] (nolock) where SensorId=@sensorId and UserId=@userId",
                                    new {sensorId, userId }))?.FirstOrDefault();
         }
+
+
+        public void GeneratePowerConsumptionCycle()
+        {
+            Execute((db) =>db.Execute("dbo.sp_generate_sensor_power_consumption_values"));
+        }
+
+
+        public long GetSensorDataCheckSum()
+        {
+            return GetTableChecksum("SensorData");
+        }
+        public long GetSensorCheckSum()
+        {
+            return GetTableChecksum("Sensor");
+        }
+        public long GetUserSensorCheckSum()
+        {
+            return GetTableChecksum("UserSensor");
+        }
+        public long GetSensorRowChecksum(Guid sensorId)
+        {
+            return ExecuteQuery(db => {
+                var r = db.Query<long?>($"select CHECKSUM(*) chksum from dbo.UserSensor (nolock) where SensorId=@sensorId", new { sensorId });
+                return r;
+            })?.FirstOrDefault() ?? 0;
+        }
+
     }
+
 }

@@ -1,0 +1,427 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "BouncyCastle.NetCore/1.8.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "Common.Logging.Core/3.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Common.Logging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Common.Logging.Core.dll": {}
+        }
+      },
+      "JsonRpcSharp/0.10.0-date20190924-0104.git-030f3a3": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging.Core": "3.4.1",
+          "System.IO.Pipelines": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/JsonRpcSharp.Client.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.IpcClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.RpcClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.TcpClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.WebSocketClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/JsonRpcSharp.Client.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.IpcClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.RpcClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.TcpClient.dll": {},
+          "lib/netstandard2.0/JsonRpcSharp.WebSocketClient.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Nethereum/0.10.0-date20191002-0144.git-0942abf": {
+        "type": "package",
+        "dependencies": {
+          "JsonRpcSharp": "0.10.0-date20190924-0104.git-030f3a3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nethereum.ABI.dll": {},
+          "lib/netstandard2.0/Nethereum.Accounts.dll": {},
+          "lib/netstandard2.0/Nethereum.Contracts.dll": {},
+          "lib/netstandard2.0/Nethereum.Hex.dll": {},
+          "lib/netstandard2.0/Nethereum.KeyStore.dll": {},
+          "lib/netstandard2.0/Nethereum.RLP.dll": {},
+          "lib/netstandard2.0/Nethereum.RPC.dll": {},
+          "lib/netstandard2.0/Nethereum.Signer.dll": {},
+          "lib/netstandard2.0/Nethereum.StandardTokenEIP20.dll": {},
+          "lib/netstandard2.0/Nethereum.Util.dll": {},
+          "lib/netstandard2.0/Nethereum.Web3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nethereum.ABI.dll": {},
+          "lib/netstandard2.0/Nethereum.Accounts.dll": {},
+          "lib/netstandard2.0/Nethereum.Contracts.dll": {},
+          "lib/netstandard2.0/Nethereum.Hex.dll": {},
+          "lib/netstandard2.0/Nethereum.KeyStore.dll": {},
+          "lib/netstandard2.0/Nethereum.RLP.dll": {},
+          "lib/netstandard2.0/Nethereum.RPC.dll": {},
+          "lib/netstandard2.0/Nethereum.Signer.dll": {},
+          "lib/netstandard2.0/Nethereum.StandardTokenEIP20.dll": {},
+          "lib/netstandard2.0/Nethereum.Util.dll": {},
+          "lib/netstandard2.0/Nethereum.Web3.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.IO.Pipelines/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BouncyCastle.NetCore/1.8.5": {
+      "sha512": "6uxsQw2UXrt82VQAWC2td3oBSJjUZ3P4u4DliagB8wf67KsU53V8sW9xwdF+IwZOOZFR0TCZuv/YKZ2BlrfAag==",
+      "type": "package",
+      "path": "bouncycastle.netcore/1.8.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bouncycastle.netcore.1.8.5.nupkg.sha512",
+        "bouncycastle.netcore.nuspec",
+        "lib/Mono/BouncyCastle.Crypto.dll",
+        "lib/Mono/BouncyCastle.Crypto.xml",
+        "lib/MonoAndroid/BouncyCastle.Crypto.dll",
+        "lib/MonoAndroid/BouncyCastle.Crypto.xml",
+        "lib/MonoMac/BouncyCastle.Crypto.dll",
+        "lib/MonoMac/BouncyCastle.Crypto.xml",
+        "lib/MonoTouch/BouncyCastle.Crypto.dll",
+        "lib/MonoTouch/BouncyCastle.Crypto.xml",
+        "lib/net20/BouncyCastle.Crypto.dll",
+        "lib/net20/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "lib/xamarinios/BouncyCastle.Crypto.dll",
+        "lib/xamarinios/BouncyCastle.Crypto.xml"
+      ]
+    },
+    "Common.Logging.Core/3.4.1": {
+      "sha512": "wLHldZHvxsSD6Ahonfj00/SkfHfKqO+YT6jsUwVm8Rch1REL9IArHAcSLXxYxYfu5/4ydGtmXvOtaH3AkVPu0A==",
+      "type": "package",
+      "path": "common.logging.core/3.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.core.3.4.1.nupkg.sha512",
+        "common.logging.core.nuspec",
+        "lib/net40/Common.Logging.Core.XML",
+        "lib/net40/Common.Logging.Core.dll",
+        "lib/net40/Common.Logging.Core.pdb",
+        "lib/netstandard1.0/Common.Logging.Core.dll",
+        "lib/netstandard1.0/Common.Logging.Core.pdb",
+        "lib/netstandard1.0/Common.Logging.Core.xml",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.XML",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.dll",
+        "lib/portable-win+net40+sl40+wp7+wpa81/Common.Logging.Core.pdb"
+      ]
+    },
+    "JsonRpcSharp/0.10.0-date20190924-0104.git-030f3a3": {
+      "sha512": "sZF1ZefSHoBjgug0pZioAWv1b/nagZvzd0bdo7lOW+LOUwZpttjlOTks3lr3gpwQAikyGGdH6CyqJAu1BU0t2g==",
+      "type": "package",
+      "path": "jsonrpcsharp/0.10.0-date20190924-0104.git-030f3a3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jsonrpcsharp.0.10.0-date20190924-0104.git-030f3a3.nupkg.sha512",
+        "jsonrpcsharp.nuspec",
+        "lib/net46/JsonRpcSharp.Client.dll",
+        "lib/net46/JsonRpcSharp.IpcClient.dll",
+        "lib/net46/JsonRpcSharp.RpcClient.dll",
+        "lib/net46/JsonRpcSharp.TcpClient.dll",
+        "lib/net46/JsonRpcSharp.WebSocketClient.dll",
+        "lib/netstandard2.0/JsonRpcSharp.Client.dll",
+        "lib/netstandard2.0/JsonRpcSharp.IpcClient.dll",
+        "lib/netstandard2.0/JsonRpcSharp.RpcClient.dll",
+        "lib/netstandard2.0/JsonRpcSharp.TcpClient.dll",
+        "lib/netstandard2.0/JsonRpcSharp.WebSocketClient.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.6.0": {
+      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+      "type": "package",
+      "path": "microsoft.csharp/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.6.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Nethereum/0.10.0-date20191002-0144.git-0942abf": {
+      "sha512": "J07iQdQYxENXYFo/iMdPHK1amksl5lBZdNtkHFGrPoUnKL+u3IiPj2j2klDs8zW8xpdSJMPY+rg/CnSUz2n5KQ==",
+      "type": "package",
+      "path": "nethereum/0.10.0-date20191002-0144.git-0942abf",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Nethereum.ABI.dll",
+        "lib/net46/Nethereum.Accounts.dll",
+        "lib/net46/Nethereum.Contracts.dll",
+        "lib/net46/Nethereum.Hex.dll",
+        "lib/net46/Nethereum.KeyStore.dll",
+        "lib/net46/Nethereum.RLP.dll",
+        "lib/net46/Nethereum.RPC.dll",
+        "lib/net46/Nethereum.Signer.dll",
+        "lib/net46/Nethereum.StandardTokenEIP20.dll",
+        "lib/net46/Nethereum.Util.dll",
+        "lib/net46/Nethereum.Web3.dll",
+        "lib/netstandard2.0/Nethereum.ABI.dll",
+        "lib/netstandard2.0/Nethereum.Accounts.dll",
+        "lib/netstandard2.0/Nethereum.Contracts.dll",
+        "lib/netstandard2.0/Nethereum.Hex.dll",
+        "lib/netstandard2.0/Nethereum.KeyStore.dll",
+        "lib/netstandard2.0/Nethereum.RLP.dll",
+        "lib/netstandard2.0/Nethereum.RPC.dll",
+        "lib/netstandard2.0/Nethereum.Signer.dll",
+        "lib/netstandard2.0/Nethereum.StandardTokenEIP20.dll",
+        "lib/netstandard2.0/Nethereum.Util.dll",
+        "lib/netstandard2.0/Nethereum.Web3.dll",
+        "nethereum.0.10.0-date20191002-0144.git-0942abf.nupkg.sha512",
+        "nethereum.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "System.IO.Pipelines/4.6.0": {
+      "sha512": "xOqFH7Uiemd/QzUl2Di23cZCrc2CmgijeTDyFKDT8+jjpH+ynf7WoLUExY2AYGyGBjGL5Kn6DZScnqeg91zQOQ==",
+      "type": "package",
+      "path": "system.io.pipelines/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.4.6.0.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "BouncyCastle.NetCore >= 1.8.5",
+      "Microsoft.CSharp >= 4.6.0",
+      "Nethereum >= 0.10.0-date20191002-0144.git-0942abf",
+      "Newtonsoft.Json >= 12.0.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\c_dev\\Console4_300\\Blockchain.Business\\Blockchain.Business.csproj",
+      "projectName": "Blockchain.Business",
+      "projectPath": "E:\\c_dev\\Console4_300\\Blockchain.Business\\Blockchain.Business.csproj",
+      "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
+      "outputPath": "E:\\c_dev\\Console4_300\\Blockchain.Business\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "dependencies": {
+          "BouncyCastle.NetCore": {
+            "target": "Package",
+            "version": "[1.8.5, )"
+          },
+          "Microsoft.CSharp": {
+            "target": "Package",
+            "version": "[4.6.0, )"
+          },
+          "Nethereum": {
+            "target": "Package",
+            "version": "[0.10.0-date20191002-0144.git-0942abf, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "JsonRpcSharp 0.10.0-date20190924-0104.git-030f3a3 depends on System.IO.Pipelines (>= 4.5.3) but System.IO.Pipelines 4.5.3 was not found. An approximate best match of System.IO.Pipelines 4.6.0 was resolved.",
+      "libraryId": "System.IO.Pipelines",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
+}

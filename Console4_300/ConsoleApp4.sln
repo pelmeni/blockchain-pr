@@ -29,10 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyConsumption.Data", "E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E46CC32-668D-41A7-918D-300574D45AD0}"
 	ProjectSection(SolutionItems) = preProject
+		Counter14.sol = Counter14.sol
 		Docs\plan.txt = Docs\plan.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyConsumption.Business", "EnergyConsumption.Business\EnergyConsumption.Business.csproj", "{99106597-4E83-4908-8979-7CFF9B6AB334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyConsumption.GenerateSensorCountersService", "EnergyConsumption.GenerateSensorCountersService\EnergyConsumption.GenerateSensorCountersService.csproj", "{D4BB6241-1FA9-4C99-9150-135F74067862}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankSystem.BankingService", "BankSystem.BankingService\BankSystem.BankingService.csproj", "{AB85B58E-9B1D-48C8-A9F5-F8E07657253E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blockchain.Business", "Blockchain.Business\Blockchain.Business.csproj", "{1A154DB4-0A97-462B-A9AA-465B187EA5B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +99,18 @@ Global
 		{99106597-4E83-4908-8979-7CFF9B6AB334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99106597-4E83-4908-8979-7CFF9B6AB334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99106597-4E83-4908-8979-7CFF9B6AB334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4BB6241-1FA9-4C99-9150-135F74067862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BB6241-1FA9-4C99-9150-135F74067862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BB6241-1FA9-4C99-9150-135F74067862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BB6241-1FA9-4C99-9150-135F74067862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB85B58E-9B1D-48C8-A9F5-F8E07657253E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB85B58E-9B1D-48C8-A9F5-F8E07657253E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB85B58E-9B1D-48C8-A9F5-F8E07657253E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB85B58E-9B1D-48C8-A9F5-F8E07657253E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A154DB4-0A97-462B-A9AA-465B187EA5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A154DB4-0A97-462B-A9AA-465B187EA5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A154DB4-0A97-462B-A9AA-465B187EA5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A154DB4-0A97-462B-A9AA-465B187EA5B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

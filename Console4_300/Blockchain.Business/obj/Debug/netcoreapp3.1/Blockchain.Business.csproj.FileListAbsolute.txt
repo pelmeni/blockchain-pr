@@ -1,0 +1,8 @@
+E:\c_dev\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.1\Blockchain.Business.deps.json
+E:\c_dev\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.1\Blockchain.Business.dll
+E:\c_dev\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.1\Blockchain.Business.pdb
+E:\c_dev\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.1\Blockchain.Business.csprojAssemblyReference.cache
+E:\c_dev\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.1\Blockchain.Business.AssemblyInfoInputs.cache
+E:\c_dev\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.1\Blockchain.Business.AssemblyInfo.cs
+E:\c_dev\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.1\Blockchain.Business.dll
+E:\c_dev\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.1\Blockchain.Business.pdb

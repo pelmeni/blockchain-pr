@@ -22,7 +22,13 @@ namespace BankSystem.Business
                         db.Query<UserAccount>("select * from dbo.[UserAccount] (nolock) where UserId=@userId",
                             new { userId }))?.ToArray();
         }
-
+        public IEnumerable<UserAccount> GetListWithLinkedSensors()
+        {
+            return
+                ExecuteQuery(
+                    db =>
+                        db.Query<UserAccount>("select * from dbo.[UserAccount] (nolock) where AutoPaySensorId is not null and IsAutoPayAllowed=1"))?.ToArray();
+        }
         public UserAccount AddOne(Guid userId, Guid accountId)
         {
 
