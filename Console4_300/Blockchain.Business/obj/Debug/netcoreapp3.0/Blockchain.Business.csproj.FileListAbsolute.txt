@@ -1,8 +1,0 @@
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.0\Blockchain.Business.deps.json
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.0\Blockchain.Business.dll
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\bin\Debug\netcoreapp3.0\Blockchain.Business.pdb
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.0\Blockchain.Business.csprojAssemblyReference.cache
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.0\Blockchain.Business.AssemblyInfoInputs.cache
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.0\Blockchain.Business.AssemblyInfo.cs
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.0\Blockchain.Business.dll
-C:\dev\hack\blockchain-pr\Console4_300\Blockchain.Business\obj\Debug\netcoreapp3.0\Blockchain.Business.pdb
