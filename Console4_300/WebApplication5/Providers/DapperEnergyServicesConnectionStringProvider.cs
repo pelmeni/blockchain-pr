@@ -10,6 +10,6 @@ namespace WebApplication5.Providers
     {
         
         //public string ConnectionString => "Server=newamber;Database=energycompany;Trusted_Connection=False;MultipleActiveResultSets=true;User Id=sa; Password=qazwsx;";
-        public string ConnectionString => "Server=::1;Database=energycompany;Trusted_Connection=False;MultipleActiveResultSets=true;User Id=sa; Password=qazwsx;";
+        public string ConnectionString => "Server=::1;Database=energycompany;Trusted_Connection=False;MultipleActiveResultSets=true;User Id=sa; Password=qazWSX123;";
     }
 }

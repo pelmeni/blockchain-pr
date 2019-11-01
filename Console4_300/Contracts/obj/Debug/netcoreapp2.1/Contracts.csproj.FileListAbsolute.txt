@@ -6,3 +6,11 @@ C:\dev\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.As
 C:\dev\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
 C:\dev\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
 C:\dev\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\bin\Debug\netcoreapp2.1\Contracts.deps.json
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\bin\Debug\netcoreapp2.1\Contracts.dll
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\bin\Debug\netcoreapp2.1\Contracts.pdb
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.csprojAssemblyReference.cache
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfoInputs.cache
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
+C:\dev\hack\blockchain-pr\Console4_300\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb

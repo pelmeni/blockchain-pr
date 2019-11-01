@@ -1,13 +1,17 @@
 ﻿using Contracts;
 using EnergyConsumption.Business;
 using System;
+using System.Numerics;
 using System.Threading;
 using System.Threading.Tasks;
+using EnergyConsumption.GenerateSensorCountersService.Providers;
+using Blockchain.Business;
 
 namespace EnergyConsumption.GenerateSensorCountersService
 {
     class Program
     {
+        private static readonly object _locker = new object();
         static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
@@ -20,7 +24,7 @@ namespace EnergyConsumption.GenerateSensorCountersService
 
             var tzops = new TariffOperations(new DapperEnergyServicesConnectionStringProvider());
 
-            var powerConsumptionTask = Task.Factory.StartNew(async() =>
+            var powerConsumptionTask = Task.Factory.StartNew(async () =>
             {
                 while (!cancelTokenSource.Token.IsCancellationRequested)
                 {
@@ -30,56 +34,59 @@ namespace EnergyConsumption.GenerateSensorCountersService
 
                     Console.WriteLine("powerConsumptionTask: consumption cycle complete");
 
-                    await Task.Delay(1000 * 60*1, cancelTokenSource.Token);
+                    await Task.Delay(1000 * 60 * 1, cancelTokenSource.Token);
                 }
             }, cancelTokenSource.Token);
 
+            
 
 
 
 
-
-            var contractAddress = "0xef012a171b50b1b9c6f775a54f54af86ce524685";
-
-            var account = new Account() { Address = "0x8364d57F6511771CBe20aaf1CF8dA73a9B487F3f", PrivateKey = "0xd9309f665b7040ad35f7820a503d2765afa3e7a7e5e72125e8f50ae98905a749" };
-
+            //var contractAddress = "0xef012a171b50b1b9c6f775a54f54af86ce524685";
+            var contractAddress = "0x8d242e4c6bc2a11b799d1978551f6985a2727cdc";
+            
+            //var account = new Account() { Address = "0x8364d57F6511771CBe20aaf1CF8dA73a9B487F3f", PrivateKey = "0xd9309f665b7040ad35f7820a503d2765afa3e7a7e5e72125e8f50ae98905a749" };
+            var account = new Account() { Address = "0xCf6e63CAA7Fd568D2a9ebBf5Cc166A410Aa3EB03", PrivateKey = "0xc543ec2a26c7698771736d1cf339db5dbace04c11d1198eb6c2f25185bc8a306" };
             //var url = "http://127.0.0.1:7545";
             //var _account = new Nethereum.Web3.Accounts.Account(privateKey);
             //var _web3 = new Web3(_account, url);
             //_web3.TransactionManager.DefaultGas = 30000;
             //_web3.TransactionManager.DefaultGasPrice = 0;
 
-            var cops = new Business.Blockchain.ContractOperations("http://127.0.0.1:7545", account.PrivateKey, contractAddress);
+            var cops = new ContractOperations("http://127.0.0.1:7545", account.PrivateKey, contractAddress);
 
             var tx = cops.emptyTariffZones().Result;
-
+            
             var syncTariffZoneTask = Task.Factory.StartNew(async () =>
             {
                 while (!cancelTokenSource.Token.IsCancellationRequested)
                 {
-                    Console.WriteLine("syncTariffZoneTask: consumption cycle begin");
 
-                    var bcTarifChksum = cops.getTariffZonesChkSum().Result;
+                        Console.WriteLine("syncTariffZoneTask: consumption cycle begin");
 
-                    var dbTarifChkSum = tzops.GetTariffZoneCheckSum();
+                        var bcTarifChksum = cops.getTariffZonesChkSum().Result;
 
-                    if (bcTarifChksum != dbTarifChkSum)
-                    {
-                        var res1 = cops.setTariffZoneChkSum(dbTarifChkSum).Result;
+                        var dbTarifChkSum = tzops.GetTariffZoneCheckSum();
 
-                        var tariffs = tzops.GetList();
-
-                        foreach (var t in tariffs)
+                        if (bcTarifChksum != dbTarifChkSum)
                         {
-                            var tx = cops.LoadTariffZone(t.TariffZoneId, t.RatePer1000).Result;
+                            var res1 = cops.setTariffZoneChkSum(dbTarifChkSum).Result;
 
-                            Console.WriteLine($"syncTariffZoneTask: txhash: {tx.TransactionHash}");
+                            var tariffs = tzops.GetList();
+
+                            foreach (var t in tariffs)
+                            {
+                                var tx = cops.LoadTariffZone(t.TariffZoneId, t.RatePer1000).Result;
+
+                                Console.WriteLine($"syncTariffZoneTask: txhash: {tx.TransactionHash}");
+                            }
                         }
-                    }
 
-                    Console.WriteLine("syncTariffZoneTask: consumption cycle complete");
+                        Console.WriteLine("syncTariffZoneTask: consumption cycle complete");
 
-                    await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
+                        await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
+   
                 }
             }, cancelTokenSource.Token);
 
@@ -101,48 +108,50 @@ namespace EnergyConsumption.GenerateSensorCountersService
             {
                 while (!cancelTokenSource.Token.IsCancellationRequested)
                 {
-                    Console.WriteLine("syncSensorsTask: sensors sync begin");
 
-                    var sensors = usops.GetList();
+                        Console.WriteLine("syncSensorsTask: sensors sync begin");
 
-                    foreach(var s in sensors)
-                    {
-                        var sDbHash = usops.GetSensorRowChecksum(s.SensorId);
+                        var sensors = usops.GetList();
 
-                        var sBcHash = cops.getSensorChkSum(s.SensorId).Result;
-
-                        if(!System.Numerics.BigInteger.Equals(sDbHash, sBcHash))
+                        foreach (var s in sensors)
                         {
+                            var sDbHash = usops.GetSensorRowChecksum(s.SensorId);
 
-                            var tx = await cops.insertSensor(s.SensorId);
+                            var sBcHash = cops.getSensorChkSum(s.SensorId).Result;
 
-                            var res = cops.getSensor(s.SensorId).Result;
+                            if (!System.Numerics.BigInteger.Equals(new BigInteger(sDbHash), sBcHash))
+                            {
 
-                            var tx1 = cops.setSensorChkSum(s.SensorId, sDbHash).Result;
+                                var tx = await cops.insertSensor(s.SensorId);
+
+                                var res = cops.getSensor(s.SensorId).Result;
+
+                                var tx1 = cops.setSensorChkSum(s.SensorId, sDbHash).Result;
+                            }
+
+                            try
+                            {
+                                var lastCounters = usops.GetLastCounters(s.SensorId);
+
+                                var tx3 = cops.insertLastSensorCounters(lastCounters.SensorId,
+                                    lastCounters.SensorDataId, lastCounters.Value, lastCounters.Created).Result;
+
+                                var res1 = cops.getLastSensorCounters(lastCounters.SensorId).Result;
+                            }
+                            catch (Exception ex)
+                            {
+                                throw ex;
+                            }
                         }
-                        try
-                        {
-                            var lastCounters = usops.GetLastCounters(s.SensorId);
 
-                            var tx3 = cops.insertLastSensorCounters(lastCounters.SensorId, lastCounters.SensorDataId, lastCounters.Value, lastCounters.Created);
+                        Console.WriteLine("syncSensorsTask: sensors sync complete");
 
-                            var res1 = cops.getLastSensorCounters(lastCounters.SensorId).Result;
-                        }
-                        catch(Exception ex)
-                        {
-                            throw ex;
-                        }
-                    }
+                        await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
 
-                    Console.WriteLine("syncSensorsTask: sensors sync complete");
-
-                    await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
                 }
             }, cancelTokenSource.Token);
 
-
-
-
+            
             /*var syncSensorsDataTask = Task.Factory.StartNew(async () =>
             {
                 while (!cancelTokenSource.Token.IsCancellationRequested)

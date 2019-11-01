@@ -5,6 +5,7 @@ using Dapper;
 using EnergyConsumption.Data;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace EnergyConsumption.Business
@@ -52,7 +53,7 @@ namespace EnergyConsumption.Business
         }
         public SensorData GetLastCounters(Guid sensorId)
         {
-            return ExecuteQuery(db => db.Query<SensorData>("select SensorId, SensorDataId, lastCountersValue Value, lastCountersDateTime Created from dbo.[vw_UserSensors] (nolock) where SensorId=@sensorId", new { sensorId }))?.FirstOrDefault();
+            return ExecuteQuery(db => db.Query<SensorData>("select SensorId, SensorDataId, Value, Created from dbo.[vw_UserSensors] (nolock) where SensorId=@sensorId", new { sensorId }))?.FirstOrDefault();
         }
         public void UpdateUserSensorText(Guid userId, string sensorText)
         {
@@ -80,7 +81,15 @@ namespace EnergyConsumption.Business
 
         public void GeneratePowerConsumptionCycle()
         {
-            Execute((db) =>db.Execute("dbo.sp_generate_sensor_power_consumption_values"));
+            try
+            {
+                Execute((db) => db.Execute("dbo.sp_generate_sensor_power_consumption_values"));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+                throw ex;
+            }
         }
 
 

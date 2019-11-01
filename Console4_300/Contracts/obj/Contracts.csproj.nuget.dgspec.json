@@ -1,30 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj": {}
+    "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj": {}
   },
   "projects": {
-    "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj": {
+    "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
-        "outputPath": "E:\\c_dev\\Console4_300\\Contracts\\obj\\",
+        "projectPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {

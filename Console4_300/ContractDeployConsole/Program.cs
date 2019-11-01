@@ -1,4 +1,5 @@
-﻿using Contracts;
+﻿using Blockchain.Business;
+using Contracts;
 using Nethereum.Web3;
 using System;
 using System.Diagnostics;
@@ -9,8 +10,8 @@ namespace ContractDeployConsole
     {
         static void Main(string[] args)
         {
-            //var account = new Account() { Address = "0xCf6e63CAA7Fd568D2a9ebBf5Cc166A410Aa3EB03", PrivateKey = "0xc543ec2a26c7698771736d1cf339db5dbace04c11d1198eb6c2f25185bc8a306" };
-            var account = new Account() { Address = "0x8364d57F6511771CBe20aaf1CF8dA73a9B487F3f", PrivateKey = "0xd9309f665b7040ad35f7820a503d2765afa3e7a7e5e72125e8f50ae98905a749" };
+            var account = new Account() { Address = "0xCf6e63CAA7Fd568D2a9ebBf5Cc166A410Aa3EB03", PrivateKey = "0xc543ec2a26c7698771736d1cf339db5dbace04c11d1198eb6c2f25185bc8a306" };
+            //var account = new Account() { Address = "0x8364d57F6511771CBe20aaf1CF8dA73a9B487F3f", PrivateKey = "0xd9309f665b7040ad35f7820a503d2765afa3e7a7e5e72125e8f50ae98905a749" };
             //
             var url = "http://127.0.0.1:7545";
 
@@ -23,8 +24,8 @@ namespace ContractDeployConsole
             _web3.TransactionManager.DefaultGasPrice = 0;
                                  
             var receipt = _web3.Eth.DeployContract.SendRequestAndWaitForReceiptAsync(
-                          EnergyConsumption.Business.Blockchain.ContractOperations._abi,
-                          EnergyConsumption.Business.Blockchain.ContractOperations._contractByteCode,
+                          ContractOperations._abi,
+                          ContractOperations._contractByteCode,
                             account.Address,
                             new Nethereum.Hex.HexTypes.HexBigInteger(3000000),
                             //0,

@@ -5,16 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Blockchain\Counter14Definition.cs.cs" />
-    <Compile Remove="Blockchain\Counter14Service.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Blockchain\Counter14Definition.cs.cs" />
-    <None Include="Blockchain\Counter14Service.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="BouncyCastle.NetCore" Version="1.8.5" />
     <PackageReference Include="Dapper" Version="2.0.30" />
     <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />

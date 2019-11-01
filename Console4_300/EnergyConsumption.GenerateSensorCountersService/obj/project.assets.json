@@ -197,13 +197,13 @@
           }
         }
       },
-      "System.IO.Pipelines/4.6.0": {
+      "System.IO.Pipelines/4.5.3": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
+          "lib/netcoreapp2.1/System.IO.Pipelines.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {}
+          "lib/netcoreapp2.1/System.IO.Pipelines.dll": {}
         }
       },
       "System.Reflection.Emit.Lightweight/4.6.0": {
@@ -251,6 +251,22 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Blockchain.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "BouncyCastle.NetCore": "1.8.5",
+          "Microsoft.CSharp": "4.6.0",
+          "Nethereum": "0.10.0-date20191002-0144.git-0942abf",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Blockchain.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockchain.Business.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -731,24 +747,22 @@
         "version.txt"
       ]
     },
-    "System.IO.Pipelines/4.6.0": {
-      "sha512": "xOqFH7Uiemd/QzUl2Di23cZCrc2CmgijeTDyFKDT8+jjpH+ynf7WoLUExY2AYGyGBjGL5Kn6DZScnqeg91zQOQ==",
+    "System.IO.Pipelines/4.5.3": {
+      "sha512": "k6Ac5MuJ/GbFo7l/bB0Bxg0JxHReDi19eW1wuDGIy/iSIAJob0cNHChvILde/v4fdX1ZNmL2Nr7axKG21wbNLw==",
       "type": "package",
-      "path": "system.io.pipelines/4.6.0",
+      "path": "system.io.pipelines/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netcoreapp2.1/System.IO.Pipelines.dll",
+        "lib/netcoreapp2.1/System.IO.Pipelines.xml",
         "lib/netstandard1.3/System.IO.Pipelines.dll",
         "lib/netstandard1.3/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
-        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.4.6.0.nupkg.sha512",
+        "system.io.pipelines.4.5.3.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -912,6 +926,11 @@
         "version.txt"
       ]
     },
+    "Blockchain.Business/1.0.0": {
+      "type": "project",
+      "path": "../Blockchain.Business/Blockchain.Business.csproj",
+      "msbuildProject": "../Blockchain.Business/Blockchain.Business.csproj"
+    },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
@@ -935,44 +954,49 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Blockchain.Business >= 1.0.0",
       "Contracts >= 1.0.0",
       "EnergyConsumption.Business >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\": {},
+    "C:\\Users\\dev\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\c_dev\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\EnergyConsumption.GenerateSensorCountersService.csproj",
+      "projectUniqueName": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\EnergyConsumption.GenerateSensorCountersService.csproj",
       "projectName": "EnergyConsumption.GenerateSensorCountersService",
-      "projectPath": "E:\\c_dev\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\EnergyConsumption.GenerateSensorCountersService.csproj",
-      "packagesPath": "C:\\Users\\gren-a-sipichugin\\.nuget\\packages\\",
-      "outputPath": "E:\\c_dev\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\obj\\",
+      "projectPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\EnergyConsumption.GenerateSensorCountersService.csproj",
+      "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\EnergyConsumption.GenerateSensorCountersService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gren-a-sipichugin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj": {
-              "projectPath": "E:\\c_dev\\Console4_300\\Contracts\\Contracts.csproj"
+            "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Blockchain.Business\\Blockchain.Business.csproj": {
+              "projectPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Blockchain.Business\\Blockchain.Business.csproj"
             },
-            "E:\\c_dev\\Console4_300\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj": {
-              "projectPath": "E:\\c_dev\\Console4_300\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj"
+            "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\Contracts\\Contracts.csproj"
+            },
+            "C:\\dev\\hack\\blockchain-pr\\Console4_300\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj": {
+              "projectPath": "C:\\dev\\hack\\blockchain-pr\\Console4_300\\EnergyConsumption.Business\\EnergyConsumption.Business.csproj"
             }
           }
         }
@@ -1003,17 +1027,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "JsonRpcSharp 0.10.0-date20190924-0104.git-030f3a3 depends on System.IO.Pipelines (>= 4.5.3) but System.IO.Pipelines 4.5.3 was not found. An approximate best match of System.IO.Pipelines 4.6.0 was resolved.",
-      "libraryId": "System.IO.Pipelines",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

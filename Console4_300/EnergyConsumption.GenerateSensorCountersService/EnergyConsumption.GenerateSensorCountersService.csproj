@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Blockchain.Business\Blockchain.Business.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\EnergyConsumption.Business\EnergyConsumption.Business.csproj" />
   </ItemGroup>

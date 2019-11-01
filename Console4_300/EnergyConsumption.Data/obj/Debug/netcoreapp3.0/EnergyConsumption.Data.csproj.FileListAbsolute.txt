@@ -5,3 +5,11 @@ C:\dev\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0
 C:\dev\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.AssemblyInfo.cs
 C:\dev\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.dll
 C:\dev\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.pdb
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\bin\Debug\netcoreapp3.0\EnergyConsumption.Data.deps.json
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\bin\Debug\netcoreapp3.0\EnergyConsumption.Data.dll
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\bin\Debug\netcoreapp3.0\EnergyConsumption.Data.pdb
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.csprojAssemblyReference.cache
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.AssemblyInfoInputs.cache
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.AssemblyInfo.cs
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.dll
+C:\dev\hack\blockchain-pr\Console4_300\EnergyConsumption.Data\obj\Debug\netcoreapp3.0\EnergyConsumption.Data.pdb
