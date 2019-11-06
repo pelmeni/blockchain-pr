@@ -56,39 +56,39 @@ namespace EnergyConsumption.GenerateSensorCountersService
 
             var cops = new ContractOperations("http://127.0.0.1:7545", account.PrivateKey, contractAddress);
 
-            var tx = cops.emptyTariffZones().Result;
+            //var tx = cops.emptyTariffZones().Result;
             
-            var syncTariffZoneTask = Task.Factory.StartNew(async () =>
-            {
-                while (!cancelTokenSource.Token.IsCancellationRequested)
-                {
+            //var syncTariffZoneTask = Task.Factory.StartNew(async () =>
+            //{
+            //    while (!cancelTokenSource.Token.IsCancellationRequested)
+            //    {
 
-                        Console.WriteLine("syncTariffZoneTask: consumption cycle begin");
+            //            Console.WriteLine("syncTariffZoneTask: consumption cycle begin");
 
-                        var bcTarifChksum = cops.getTariffZonesChkSum().Result;
+            //            var bcTarifChksum = cops.getTariffZonesChkSum().Result;
 
-                        var dbTarifChkSum = tzops.GetTariffZoneCheckSum();
+            //            var dbTarifChkSum = tzops.GetTariffZoneCheckSum();
 
-                        if (bcTarifChksum != dbTarifChkSum)
-                        {
-                            var res1 = cops.setTariffZoneChkSum(dbTarifChkSum).Result;
+            //            if (bcTarifChksum != dbTarifChkSum)
+            //            {
+            //                var res1 = cops.setTariffZoneChkSum(dbTarifChkSum).Result;
 
-                            var tariffs = tzops.GetList();
+            //                var tariffs = tzops.GetList();
 
-                            foreach (var t in tariffs)
-                            {
-                                var tx = cops.LoadTariffZone(t.TariffZoneId, t.RatePer1000).Result;
+            //                foreach (var t in tariffs)
+            //                {
+            //                    var tx = cops.LoadTariffZone(t.TariffZoneId, t.RatePer1000).Result;
 
-                                Console.WriteLine($"syncTariffZoneTask: txhash: {tx.TransactionHash}");
-                            }
-                        }
+            //                    Console.WriteLine($"syncTariffZoneTask: txhash: {tx.TransactionHash}");
+            //                }
+            //            }
 
-                        Console.WriteLine("syncTariffZoneTask: consumption cycle complete");
+            //            Console.WriteLine("syncTariffZoneTask: consumption cycle complete");
 
-                        await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
+            //            await Task.Delay(1000 * 15 * 1, cancelTokenSource.Token);
    
-                }
-            }, cancelTokenSource.Token);
+            //    }
+            //}, cancelTokenSource.Token);
 
 
 
@@ -115,30 +115,43 @@ namespace EnergyConsumption.GenerateSensorCountersService
 
                         foreach (var s in sensors)
                         {
-                            var sDbHash = usops.GetSensorRowChecksum(s.SensorId);
+                            //var sDbHash = usops.GetSensorRowChecksum(s.SensorId);
 
-                            var sBcHash = cops.getSensorChkSum(s.SensorId).Result;
+                            //var sBcHash = cops.getSensorChkSum(s.SensorId).Result;
 
-                            if (!System.Numerics.BigInteger.Equals(new BigInteger(sDbHash), sBcHash))
-                            {
+                            //if (!System.Numerics.BigInteger.Equals(new BigInteger(sDbHash), sBcHash))
+                            //{
 
-                                var tx = await cops.insertSensor(s.SensorId);
+                            //    var tx = await cops.insertSensor(s.SensorId);
 
-                                var res = cops.getSensor(s.SensorId).Result;
+                            //    var res = cops.getSensor(s.SensorId).Result;
 
-                                var tx1 = cops.setSensorChkSum(s.SensorId, sDbHash).Result;
-                            }
+                            //    var tx1 = cops.setSensorChkSum(s.SensorId, sDbHash).Result;
+                            //}
 
                             try
                             {
                                 var lastCounters = usops.GetLastCounters(s.SensorId);
 
-                                var tx3 = cops.insertLastSensorCounters(lastCounters.SensorId,
-                                    lastCounters.SensorDataId, lastCounters.Value, lastCounters.Created).Result;
+                                var tx = cops.AddData(s.SensorId, lastCounters.Value, lastCounters.Created,
+                                    (byte) lastCounters.Created.Month, (short) lastCounters.Created.Year).Result;
 
-                                var res1 = cops.getLastSensorCounters(lastCounters.SensorId).Result;
-                            }
-                            catch (Exception ex)
+                                var len = cops.GetDataLength(s.SensorId, (short) lastCounters.Created.Year,
+                                    (byte) lastCounters.Created.Month).Result;
+
+                                for (var i = 0; i < len; i++)
+                                {
+
+                                    var data = cops.GetData(s.SensorId, (short) lastCounters.Created.Year,
+                                        (byte) lastCounters.Created.Month, i).Result;
+                                }
+
+                                //var tx3 = cops.insertLastSensorCounters(lastCounters.SensorId,
+                            //    lastCounters.SensorDataId, lastCounters.Value, lastCounters.Created).Result;
+
+                            //var res1 = cops.getLastSensorCounters(lastCounters.SensorId).Result;
+                        }
+                        catch (Exception ex)
                             {
                                 throw ex;
                             }
