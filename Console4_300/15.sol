@@ -1,8 +1,8 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.5.0;
 
-pragma experimental ABIEncoderV2;
+//pragma experimental ABIEncoderV2;
 
-import "https://github.com/bokkypoobah/BokkyPooBahsDateTimeLibrary/blob/master/deployment/BokkyPooBahsDateTimeContract_flattened_v1.00.sol";
+import "browser/BokkyPooBahsDateTimeLibrary.sol";
 
 contract Counter15  {
     
@@ -31,6 +31,18 @@ contract Counter15  {
         uint8 month;
         uint16 year;
     }
+    struct MSensorData{
+        uint256 index; 
+        bytes16 sensor_id;
+        uint64 counter;
+        uint256 created;
+        uint8 month;
+        uint16 year;
+        mapping(uint=>SensorData[]) mdata;
+        mapping(uint=>SensorData) last_data;
+        mapping(uint=>uint) offset;
+        mapping(uint=>uint) amount;
+    }    
     struct BillingData{
         bytes16 sensor_id;
         bool exists;
@@ -48,13 +60,19 @@ contract Counter15  {
         uint256 final_invoice_payed_on;
     }
     //sensor monthly data
-    mapping(bytes16=>mapping(uint32=>SensorData[])) private data;
+    mapping(bytes16=>SensorData[]) private data;
+    
+    mapping(bytes16=>MSensorData) private datas;
+    
+
+    
     //absolute sensor counter value
     mapping(bytes16=>mapping(uint32=>uint64)) private cnt_data;
     //sensor monthly counters amount
     mapping(bytes16=>mapping(uint32=>uint64)) private amount_data;
     //last sensor data
-    mapping(bytes16=>mapping(uint32=>SensorData)) private last_data;
+    mapping(bytes16=>SensorData) private last_data;
+    
     //reserved
     mapping(bytes16=>mapping(uint32=>uint64)) private last_costs;
     //last sensor counters value
@@ -66,19 +84,36 @@ contract Counter15  {
     //sensor avarage daily consumption in value amount
     
     
-    function add_data(bytes16 _sensor_id, uint64 _counter, uint256 _created, uint8 _month, uint16 _year) public
+    function add_data(bytes16 _sensor_id, uint64 _counter, uint256 _created) public
     {
-        SensorData[] memory d=data[_sensor_id][_year*12+_month];
+        SensorData[] memory d=data[_sensor_id];
 
         uint256 len = d.length;
         
+        uint16 _year = 2019;//uint16(BokkyPooBahsDateTimeLibrary.getMonth(_created));
+        
+        uint8 _month = 11;//uint8(BokkyPooBahsDateTimeLibrary.getYear(_created));
+        
+        
         SensorData memory  sd=SensorData({index:d.length+1,sensor_id:_sensor_id,counter:_counter, created:_created, month:_month, year:_year });
             
-        data[_sensor_id][_year*12+_month].push(sd);
+        data[_sensor_id].push(sd);
         
-        last_data[_sensor_id][_year*12+_month] = sd;
         
-        cnt_data[_sensor_id][_year*12+_month] += 1;
+        datas[_sensor_id].mdata[2019*11].push(sd);
+
+        datas[_sensor_id].last_data[2019*11] = sd;
+
+        if(datas[_sensor_id].mdata[2019*11].length==0){
+            datas[_sensor_id].offset[2019*11] = last_value[_sensor_id];
+        }
+        datas[_sensor_id].amount[2019*11] = _counter - datas[_sensor_id].offset[2019*11];
+        
+        last_value[_sensor_id] = _counter;
+      /*  
+        last_data[_sensor_id] = sd;
+        
+        //cnt_data[_sensor_id][_year*12+_month] += 1;
         
         if(len==0){
             offset[_sensor_id] = last_value[_sensor_id];
@@ -87,15 +122,24 @@ contract Counter15  {
         amount_data[_sensor_id][_year*12+_month] = _counter-offset[_sensor_id];
         
         last_value[_sensor_id] = _counter;
-
+    */
     }
+    function get_val(bytes16 sensor_id) public view returns (uint counter, uint amount){
 
-    function get_data(bytes16 sensor_id, uint16 year, uint8 month, uint256 index) public view returns (uint64 value){
-        value = data[sensor_id][year*12+month][index].counter;
+        counter=datas[sensor_id].last_data[2019*11].counter;
+        amount=datas[sensor_id].amount[2019*11];
+    }
+    function get_data(bytes16 sensor_id, uint256 index) public view returns (uint value){
+        //SensorData[] memory d=data[sensor_id];
+        //value = d[index].year;
+        
+        //MSensorData memory d=;
+        value=datas[sensor_id].mdata[2019*11][index].year;
     }
     function get_data_len(bytes16 sensor_id, uint16 year, uint8 month) public view returns (uint256 value){
-        SensorData[] memory d=data[sensor_id][year*12+month];
-        value = d.length;
+        //SensorData[] memory d=data[sensor_id];
+        //value = d.length;
+        value=value=datas[sensor_id].mdata[2019*11].length;
     }
     
     function process_billing(bytes16 sensor_id) public 
